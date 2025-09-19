@@ -1,28 +1,35 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import AddTask from "./components/AddTask";
 import Tasks from "./components/Tasks";
+import { json } from "react-router-dom";
 
 function App() {
-  const [tasks, setTasks] = useState([
-    {
-      id: 1,
-      title: "Estudar programação",
-      description: "Estudar programação para se tornar um desenvolvedor",
-      isCompleted: true,
-    },
-    {
-      id: 2,
-      title: "Fazer compras",
-      description: "Comprar carne vermelha e alface",
-      reminder: true,
-    },
-    {
-      id: 3,
-      title: "Ler um livro",
-      description: "Ler um capítulo inteiro do livro",
-      reminder: true,
-    },
-  ]);
+  const [tasks, setTasks] = useState(
+    JSON.parse(localStorage.getItem("tasks")) || []
+  );
+
+  useEffect(() => {
+    localStorage.setItem("tasks", JSON.stringify(tasks));
+  }, [tasks]);
+
+  useEffect(() => {
+    async function fetchTasks() {
+      //CHAMAR A API
+      const response = await fetch(
+        "https://jsonplaceholder.typicode.com/todos?_limit=10",
+        {
+          method: "GET",
+        }
+      );
+      // PEGAR OS DADOS QUE ELA RETORNA
+      const data = await response.json();
+
+      // ARMAZENAR/PERSISTIR ESSES DADOS NO STATE
+      setTasks(data);
+    }
+    //SE QUISER PEGAR DADOS DE UMA API
+    //fetchTasks();
+  }, []);
 
   function onAddTaskSubmit(title, description) {
     const newTask = {
