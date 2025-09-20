@@ -1,0 +1,13 @@
+{
+  "title": "Task Manager",
+  "addTask": "Add Task",
+  "chooseLanguage": "Choose your language",
+  "alertMessage": "Fill in the task title and description.",
+  "placeHolderTitle": "Enter the task title",
+  "placeHolderDescription": "Enter the task description",
+  "languages": {
+    "pt": "Portuguese",
+    "en": "English",
+    "es": "Spanish"
+  }
+}

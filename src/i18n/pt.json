@@ -1,0 +1,13 @@
+{
+  "title": "Gerenciador de Tarefas",
+  "addTask": "Adicionar",
+  "chooseLanguage": "Escolha seu idioma",
+  "alertMessage": "Preencha o título e a descrição da tarefa.",
+  "placeHolderTitle": "Digite o título da tarefa",
+  "placeHolderDescription": "Digite a descrição da tarefa",
+  "languages": {
+    "pt": "Português",
+    "en": "Inglês",
+    "es": "Espanhol"
+  }
+}

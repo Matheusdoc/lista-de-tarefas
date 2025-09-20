@@ -1,0 +1,13 @@
+{
+  "title": "Administrador de Tareas",
+  "addTask": "Agregar Tarea",
+  "chooseLanguage": "Elige tu idioma",
+  "alertMessage": "Complete el título y la descripción de la tarea.",
+  "placeHolderTitle": "Ingrese el título de la tarea",
+  "placeHolderDescription": "Ingrese la descripción de la tarea",
+  "languages": {
+    "pt": "Portugués",
+    "en": "Inglés",
+    "es": "Español"
+  }
+}
