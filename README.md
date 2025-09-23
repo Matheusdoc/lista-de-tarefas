@@ -1,23 +1,19 @@
-## Library Next JS
+## Lista de tarefas React JS
 
-It's an App to study some NextJS and Redux toolkit. Some tests, some practice, but beauty with some style :p
+Projeto de estudos em React.js utilizando Vite, Tailwind CSS para a estilização e i18n para oferecer tradução em português, inglês e espanhol. Desenvolvi uma lista de tarefas com persistência no localStorage e também preparei a possibilidade de integração com uma API para salvar novos dados e já gerar tarefas automaticamente. Foi uma ótima oportunidade para consolidar conceitos importantes de front-end e explorar boas práticas no desenvolvimento.
 
-## Technology
+## Tecnologias
 
-Here are the technologies used in this project.
+- React JS + Vite
+- Tailwind css
+- JavaScript
+- i18n
 
-- Next JS
-- Redux
-- Axios
-- Json Server
-
-## Services Used
+## Versionamento
 
 - Github
 
-## Getting Started
-
-First, run the development server:
+## Para rodar o projeto
 
 ```bash
 npm run dev
@@ -25,42 +21,19 @@ npm run dev
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abra [http://localhost:5173](http://localhost:5173) no seu navegador para ver o resultado.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Características
 
-## How to use
+- Adicionar tarefa.
+- Excluir tarefa.
+- Visualizar tarefas.
+- Escolher idioma
 
-### Home Page. Here you will see some books.
-
-![Home Screen](https://github.com/Lucasdfg07/Library-next.js/blob/master/public/readme/home.png)
-![Home Screen](https://github.com/Lucasdfg07/Library-next.js/blob/master/public/readme/home2.png)
-![Home Screen](https://github.com/Lucasdfg07/Library-next.js/blob/master/public/readme/home3.png)
-
-### Cart Page. And you can see the cart items, using Redux.
-
-![Cart Screen](https://github.com/Lucasdfg07/Library-next.js/blob/master/public/readme/cart.png)
-
-## Features
-
-- See some Books.
-- Buy some books.
-- Control de Items Cart.
-
-## Links
-
-- Repository: https://github.com/Lucasdfg07/Library-next.js
-  - In case of sensitive bugs like security vulnerabilities, please contact
-    Lucassiqueirafernandes07@gmail.com directly instead of using issue tracker.
-    We value your effort to improve the security and privacy of this project!
-
-## Versioning
+## Versão
 
 1.0.0.0
 
-## Authors
+## Autor
 
-- **Lucas Siqueira Fernandes**: @Lucasdfg07 (https://github.com/Lucasdfg07)
-
-Please follow github and join us!
-Thanks to visiting me and good coding!
+- **Matheus da Silva Pinto**
